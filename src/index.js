@@ -454,12 +454,12 @@ import "babel-polyfill";
                 // four
                 `<svg class="venn_chart" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="900" height="400px" viewBox="0 0 900 400" enable-background="new 0 0 900 400" xml:space="preserve">
                     <g class="group" transform="matrix(1 0 0 1 53 40.5)">                            
-                        <ellipse stroke="#666" stroke-width="2" transform="matrix(0.7062 -0.708 0.708 0.7062 -90.7325 165.0259)" opacity="0.42" fill="${this.colors[0]}" cx="153.48" cy="191.84" rx="108.558" ry="187.758" />
-                        <ellipse stroke="#666" stroke-width="2" transform="matrix(-0.7062 -0.708 0.708 -0.7062 394.2766 545.2882)" opacity="0.42" fill="${this.colors[1]}" cx="310.274" cy="190.84" rx="108.558" ry="187.758" />
-                        <path opacity="0.42" stroke="#666" stroke-width="2" fill="${this.colors[2]}" d="M173.894,81.27c-69.856,69.758-100.813,152.074-69.146,183.87
+                        <ellipse stroke="#666" stroke-width="2" transform="matrix(0.7062 -0.708 0.708 0.7062 -90.7325 165.0259)"  fill="${this.colors[0]}" cx="153.48" cy="191.84" rx="108.558" ry="187.758" />
+                        <ellipse stroke="#666" stroke-width="2" transform="matrix(-0.7062 -0.708 0.708 -0.7062 394.2766 545.2882)"  fill="${this.colors[1]}" cx="310.274" cy="190.84" rx="108.558" ry="187.758" />
+                        <path  stroke="#666" stroke-width="2" fill="${this.colors[2]}" d="M173.894,81.27c-69.856,69.758-100.813,152.074-69.146,183.87
                         c31.669,31.791,113.969,1.018,183.827-68.738c69.858-69.759,100.813-152.076,69.145-183.867
                         C326.053-19.259,243.75,11.516,173.894,81.27z" />
-                        <path opacity="0.42" stroke="#666" stroke-width="2" fill="${this.colors[3]}" d="M290.272,81.271c69.856,69.758,100.813,152.074,69.145,183.869
+                        <path  stroke="#666" stroke-width="2" fill="${this.colors[3]}" d="M290.272,81.271c69.856,69.758,100.813,152.074,69.145,183.869
                         c-31.669,31.791-113.969,1.018-183.826-68.738C105.734,126.645,74.778,44.327,106.446,12.536
                         C138.113-19.259,220.415,11.517,290.272,81.271z" />
                     </g>
