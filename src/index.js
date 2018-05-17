@@ -371,8 +371,8 @@ import "babel-polyfill";
                 `<svg class="venn_chart" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="850" height="300px" viewBox="0 0 850 300" enable-background="new 0 0 850 300" xml:space="preserve" style="background-color:#fff;">
                     <g>
                         <g class="group">
-                            <circle opacity="0.5" fill="${this.colors[0]}" cx="211.483" cy="132.905" r="127" />
-                            <circle opacity="0.5" fill="${this.colors[1]}" cx="339.535" cy="132.905" r="127" />
+                            <circle opacity="0.5" stroke="#666" stroke-width="2" fill="${this.colors[0]}" cx="211.483" cy="132.905" r="127" />
+                            <circle opacity="0.5" stroke="#666" stroke-width="2" fill="${this.colors[1]}" cx="339.535" cy="132.905" r="127" />
                         </g>                    
                         <g class="chart_label" style="display:block;">                             
                             <text width="100" height="30" text-anchor="middle" transform="matrix(1 0 0 1 149 135)" font-family="Arial" font-size="24">${this.WNT2.A}</text>
@@ -404,9 +404,9 @@ import "babel-polyfill";
                 // three
                 `<svg class="venn_chart" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="800" height="450px" viewBox="0 0 800 450" xml:space="preserve">      
                     <g class="group" transform="matrix(1 0 0 1 50 45)">
-                        <circle opacity="0.5" fill="${this.colors[0]}" cx="183.537" cy="225.025" r="121.429" />
-                        <circle opacity="0.5" fill="${this.colors[1]}" cx="121.429" cy="121.429" r="121.429" />
-                        <circle opacity="0.5" fill="${this.colors[2]}" cx="242.857" cy="121.429" r="121.429" />
+                        <circle opacity="0.5" stroke="#666" stroke-width="2" fill="${this.colors[0]}" cx="183.537" cy="225.025" r="121.429" />
+                        <circle opacity="0.5" stroke="#666" stroke-width="2" fill="${this.colors[1]}" cx="121.429" cy="121.429" r="121.429" />
+                        <circle opacity="0.5" stroke="#666" stroke-width="2" fill="${this.colors[2]}" cx="242.857" cy="121.429" r="121.429" />
                     </g>
                     <g class="chart_label" style="display:block;">
                         <text transform="matrix(1 0 0 1 115 143)" width="100" height="30" text-anchor="middle" font-size="22">${this.WNT3.A}</text>
@@ -454,12 +454,12 @@ import "babel-polyfill";
                 // four
                 `<svg class="venn_chart" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="900" height="400px" viewBox="0 0 900 400" enable-background="new 0 0 900 400" xml:space="preserve">
                     <g class="group" transform="matrix(1 0 0 1 53 40.5)">                            
-                        <ellipse transform="matrix(0.7062 -0.708 0.708 0.7062 -90.7325 165.0259)" opacity="0.42" fill="${this.colors[0]}" cx="153.48" cy="191.84" rx="108.558" ry="187.758" />
-                        <ellipse transform="matrix(-0.7062 -0.708 0.708 -0.7062 394.2766 545.2882)" opacity="0.42" fill="${this.colors[1]}" cx="310.274" cy="190.84" rx="108.558" ry="187.758" />
-                        <path opacity="0.42" fill="${this.colors[2]}" d="M173.894,81.27c-69.856,69.758-100.813,152.074-69.146,183.87
+                        <ellipse stroke="#666" stroke-width="2" transform="matrix(0.7062 -0.708 0.708 0.7062 -90.7325 165.0259)" opacity="0.42" fill="${this.colors[0]}" cx="153.48" cy="191.84" rx="108.558" ry="187.758" />
+                        <ellipse stroke="#666" stroke-width="2" transform="matrix(-0.7062 -0.708 0.708 -0.7062 394.2766 545.2882)" opacity="0.42" fill="${this.colors[1]}" cx="310.274" cy="190.84" rx="108.558" ry="187.758" />
+                        <path opacity="0.42" stroke="#666" stroke-width="2" fill="${this.colors[2]}" d="M173.894,81.27c-69.856,69.758-100.813,152.074-69.146,183.87
                         c31.669,31.791,113.969,1.018,183.827-68.738c69.858-69.759,100.813-152.076,69.145-183.867
                         C326.053-19.259,243.75,11.516,173.894,81.27z" />
-                        <path opacity="0.42" fill="${this.colors[3]}" d="M290.272,81.271c69.856,69.758,100.813,152.074,69.145,183.869
+                        <path opacity="0.42" stroke="#666" stroke-width="2" fill="${this.colors[3]}" d="M290.272,81.271c69.856,69.758,100.813,152.074,69.145,183.869
                         c-31.669,31.791-113.969,1.018-183.826-68.738C105.734,126.645,74.778,44.327,106.446,12.536
                         C138.113-19.259,220.415,11.517,290.272,81.271z" />
                     </g>
@@ -579,10 +579,10 @@ import "babel-polyfill";
                         <rect opacity="0.5" width="28" height="20" data-color-index=3 fill="${this.colors[3]}" x="560" y="60"></rect>
                     </g>
                     <g>
-                        <text font-weight="bold" fill="#FF8900" x="600" y="125" font-size="12">${this.WNT4.titleName1}</text>
-                        <text font-weight="bold" fill="#00DF12" x="600" y="75" font-size="12">${this.WNT4.titleName2}</text>
-                        <text font-weight="bold" fill="#0000FF" x="600" y="102" font-size="12">${this.WNT4.titleName3}</text>
-                        <text font-weight="bold" fill="#FF0000" x="600" y="152" font-size="12">${this.WNT4.titleName4}</text>
+                        <text font-weight="bold" fill="#333" x="600" y="125" font-size="12">${this.WNT4.titleName1}</text>
+                        <text font-weight="bold" fill="#333" x="600" y="75" font-size="12">${this.WNT4.titleName2}</text>
+                        <text font-weight="bold" fill="#333" x="600" y="102" font-size="12">${this.WNT4.titleName3}</text>
+                        <text font-weight="bold" fill="#333" x="600" y="152" font-size="12">${this.WNT4.titleName4}</text>
                     </g>
                 </svg>`,
                 // five
@@ -597,13 +597,13 @@ import "babel-polyfill";
                     -->
                     <g class="group">
                         <!-- 浅红3 --><!-- 形状 -->
-                        <path opacity="0.5" fill="${this.colors[0]}" d="M744.377,408.766c12.014-93.332-65.949-180.281-174.135-194.207
+                        <path  opacity="0.5" fill="${this.colors[0]}" d="M744.377,408.766c12.014-93.332-65.949-180.281-174.135-194.207
                             c-47.596-6.125-93.107,2.91-130.184,22.893c-19.551,9.549-59.568,25.896-78.201,24.957
                             c-110.932-5.598-182.358,14.537-189.918,73.291c-7.564,58.752,57.295,100.137,168.317,122.498
                             c17.586,3.543,49.037,24.854,65.695,38.627c8.199,7.715,17.18,14.828,26.854,21.229c2.148,1.471,4.281,2.834,6.398,4.068
                             c25.391,15.506,55.104,26.25,87.537,30.426C634.924,566.471,732.361,502.098,744.377,408.766z" />
                         <!-- 边框 -->
-                        <path fill="none" stroke="${this.colors[0]}" stroke-width="5" stroke-miterlimit="10" d="M744.377,408.766
+                        <path fill="none" stroke="#666" stroke-width="2" stroke-miterlimit="10" d="M744.377,408.766
                             c12.014-93.332-65.949-180.281-174.135-194.207c-47.596-6.125-93.107,2.91-130.184,22.893
                             c-19.551,9.549-59.568,25.896-78.201,24.957c-110.932-5.598-182.358,14.537-189.918,73.291
                             c-7.564,58.752,57.295,100.137,168.317,122.498c17.586,3.543,49.037,24.854,65.695,38.627c8.199,7.715,17.18,14.828,26.854,21.229
@@ -615,7 +615,7 @@ import "babel-polyfill";
                             c1.826,17.846-9.208,54.201-17.426,74.189c-4.939,10.119-9.072,20.803-12.32,31.939c-0.766,2.488-1.437,4.93-1.988,7.316
                             c-7.287,28.846-8.744,60.408-3.123,92.619C241.189,624.9,331.543,698.889,424.244,682.709z" />
                             <!-- 边框 -->
-                        <path fill="none" stroke="${this.colors[1]}" stroke-width="4" stroke-miterlimit="10" d="M424.244,682.709
+                        <path fill="none" stroke="#666" stroke-width="2" stroke-miterlimit="10" d="M424.244,682.709
                             c92.699-16.182,152.645-116.406,133.889-223.859c-8.254-47.273-30.367-88.063-60.439-117.555
                             c-14.912-15.844-42.385-49.221-47.008-67.295c-27.523-107.609-67.918-169.859-126.273-159.672
                             c-58.356,10.184-78.664,84.393-67.124,197.055c1.826,17.846-9.208,54.201-17.426,74.189c-4.939,10.119-9.072,20.803-12.32,31.939
@@ -628,7 +628,7 @@ import "babel-polyfill";
                             c-16.238,7.625-54.197,9.236-75.78,8.092c-11.183-1.314-22.631-1.682-34.215-1.063c-2.602,0.1-5.128,0.275-7.563,0.543
                             c-29.633,2.664-59.901,11.729-88.44,27.686C62.787,276.564,22.847,386.305,68.777,468.438z" />
                         <!-- 边框 -->
-                        <path fill="none" stroke="${this.colors[2]}" stroke-width="5" stroke-miterlimit="10" d="M68.777,468.438
+                        <path fill="none" stroke="#666" stroke-width="2" stroke-miterlimit="10" d="M68.777,468.438
                             c45.929,82.131,160.34,105.555,255.543,52.313c41.881-23.422,73.063-57.783,90.949-95.918
                             c10.018-19.311,32.432-56.277,47.959-66.617c92.449-61.566,137.836-120.277,108.924-171.979
                             c-28.912-51.703-105.662-46.324-208.166,1.828c-16.238,7.625-54.197,9.236-75.78,8.092c-11.183-1.314-22.631-1.682-34.215-1.063
@@ -640,7 +640,7 @@ import "babel-polyfill";
                             c40.354-43.367,11.709-114.773-65.545-197.584c-12.234-13.121-25.402-48.758-30.93-69.652c-2.176-11.047-5.336-22.057-9.475-32.895
                             c-0.893-2.445-1.834-4.797-2.834-7.031c-11.619-27.391-29.523-53.424-53.463-75.697C342.965-10.19,226.267-14.571,162.166,54.322z" />
                         <!-- 边框 -->
-                        <path fill="none" stroke="${this.colors[3]}" stroke-width="5" stroke-miterlimit="10" d="M162.166,54.322
+                        <path fill="none" stroke="#666" stroke-width="2" stroke-miterlimit="10" d="M162.166,54.322
                             c-64.101,68.893-51.329,184.975,28.529,259.277c35.132,32.688,77.396,51.836,119.18,57.172
                             c21.451,3.617,63.508,13.621,78.109,25.232c86.939,69.129,156.734,94.338,197.086,50.967
                             c40.354-43.367,11.709-114.773-65.545-197.584c-12.234-13.121-25.402-48.758-30.93-69.652c-2.176-11.047-5.336-22.057-9.475-32.895
@@ -652,7 +652,7 @@ import "babel-polyfill";
                             c53.686,25.039,112.803-24.203,167.803-123.203c8.711-15.682,38.563-39.182,56.742-50.875c9.838-5.471,19.342-11.869,28.375-19.143
                             c2.055-1.602,4.002-3.221,5.818-4.863c22.48-19.488,41.736-44.539,55.557-74.176C694.66,171.531,662.893,59.152,577.607,19.381z" />
                         <!-- 边框 -->
-                        <path fill="none" stroke="${this.colors[4]}" stroke-width="5" stroke-miterlimit="10" d="M577.607,19.381
+                        <path fill="none" stroke="#666" stroke-width="2" stroke-miterlimit="10" d="M577.607,19.381
                             c-85.283-39.771-191.793,8.127-237.893,106.982c-20.281,43.494-25.484,89.602-17.695,130.994c3.166,21.523,6.6,64.617,0.049,82.086
                             c-39,104-41.491,178.168,12.197,203.203c53.686,25.039,112.803-24.203,167.803-123.203c8.711-15.682,38.563-39.182,56.742-50.875
                             c9.838-5.471,19.342-11.869,28.375-19.143c2.055-1.602,4.002-3.221,5.818-4.863c22.48-19.488,41.736-44.539,55.557-74.176
