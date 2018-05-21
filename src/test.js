@@ -71,15 +71,17 @@ window.onload = function () {
 
     var oV = new Venn({ id: "venn_wrap" }).config({
         data: data,
-        compareGroup: compareGroup
+        compareGroup: compareGroup,
+        isMultipleSelect:true
     }).drawVenn()
         .hover(function () {
-            this.$select.$el.setAttribute('opacity', '0.5')
+            this.$select.$el.setAttribute('opacity', '0.7')
         }, function () {
             this.$select.$el.setAttribute('opacity', '0')
         })
         .on('click', function () {
-            console.log(this.$select.$data.result)
+            console.log(this.selectCollection
+            )
         })
         .lengedclick(function (ev, $select) {
             panel.style.left = (ev.pageX + 20) + 'px';
@@ -105,7 +107,7 @@ window.onload = function () {
 
     // gen color panel
     var colorPanel = [
-        "red", "yellow", "blue", "gray", "orange", "skyblue", "#b3de69", "#fccde5", "#d9d9d9", "#bc80bd", "#ccebc5", "#ffed6f"
+        "rgba(255,0,0,0.2)", "rgba(255,205,51,0.2)", "rgba(255,255,51,0.2)", "rgba(168,217,115,0.2)", "rgba(51,192,115,0.2)", "rgba(51,195,243,0.2)", "rgba(51,141,205,0.2)", "rgba(51,77,128,0.2)", "rgba(141,89,179,0.2)", "rgba(0,0,0,0.2)","rgba(255,0,0,0.4)", "rgba(255,205,51,0.4)", "rgba(255,255,51,0.4)", "rgba(168,217,115,0.4)", "rgba(51,192,115,0.4)", "rgba(51,195,243,0.4)", "rgba(51,141,205,0.4)", "rgba(51,77,128,0.4)", "rgba(141,89,179,0.4)", "rgba(0,0,0,0.4)","rgba(255,0,0,0.6)", "rgba(255,205,51,0.6)", "rgba(255,255,51,0.6)", "rgba(168,217,115,0.6)", "rgba(51,192,115,0.6)", "rgba(51,195,243,0.6)", "rgba(51,141,205,0.6)", "rgba(51,77,128,0.6)", "rgba(141,89,179,0.6)", "rgba(0,0,0,0.6)","rgba(255,0,0,0.8)", "rgba(255,205,51,0.8)", "rgba(255,255,51,0.8)", "rgba(168,217,115,0.8)", "rgba(51,192,115,0.8)", "rgba(51,195,243,0.8)", "rgba(51,141,205,0.8)", "rgba(51,77,128,0.8)", "rgba(141,89,179,0.8)", "rgba(0,0,0,0.8)"
     ];
 
     let panel = document.querySelector('.colorPanel');

@@ -22,3 +22,7 @@ section {
     margin: 1px;
     float: left;
 }
+
+.pathLinkArea path.active {
+    opacity: .5;
+}
