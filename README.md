@@ -66,6 +66,7 @@ ___
 `config` 设置venn图的基本数据   
 - `data {Array}`: venn 图数据
 - `compareGroup {Array}`: venn图比较组
+- `isMultipleSelect {Boolean}` venn图多选开关
 
 `setColor` 设置Venn图的颜色
 - `colors {Array/String}` :颜色数组/颜色值
