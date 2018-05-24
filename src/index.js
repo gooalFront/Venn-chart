@@ -195,7 +195,7 @@ import "babel-polyfill";
             if (this.mouseover || this.mouseout) this.hover(this.mouseover || null, this.mouseout || null);
             // apply events
             this[applyEvents]();
-            this.hover();
+            // this.hover();
             return this;
         }
 
@@ -224,7 +224,7 @@ import "babel-polyfill";
 
         // hover
         hover(fnEnter, fnOut) {
-            let aPath = document.querySelectorAll('.pathLinkArea path');
+            let aPath = this.parent.querySelectorAll(".pathLinkArea path");
             if (!aPath) throw new Error('error');
             this.el = Array.from(aPath);
             this.mouseover = fnEnter;
@@ -363,11 +363,11 @@ import "babel-polyfill";
                                     // 如果在选择的集合里
                                     var res = this[isInArray](this.$select.$data.result, this.selectCollection, 'CompareGroup');
                                     if (res.status) {
-                                        document.querySelector("path[areaindex="+ this.$select.$data.result.CompareGroup).setAttribute('class','');
-                                        this.selectCollection.splice(res.index,1);
-                                    }else{
+                                        this.parent.querySelector("path[areaindex=" + this.$select.$data.result.CompareGroup).setAttribute('class', '');
+                                        this.selectCollection.splice(res.index, 1);
+                                    } else {
                                         this.selectCollection.push(this.$select.$data.result)
-                                        document.querySelector("path[areaindex="+ this.$select.$data.result.CompareGroup).setAttribute('class','active');
+                                        this.parent.querySelector("path[areaindex=" + this.$select.$data.result.CompareGroup).setAttribute('class', 'active');
                                     }
                                 }
                                 eventItem.fn && eventItem.fn.call(this);
