@@ -97,6 +97,10 @@ window.onload = function () {
             compareGroup: compareGroup2
         })
         .drawVenn()
+        .on('click', function () {
+            console.log(this.selectCollection
+            )
+        })
         .lengedclick(function (ev, $select) {
             panel.style.left = (ev.pageX + 20) + 'px';
             panel.style.top = (ev.pageY - 50) + 'px';
