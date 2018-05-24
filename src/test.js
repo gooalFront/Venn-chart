@@ -97,6 +97,7 @@ window.onload = function () {
             compareGroup: compareGroup2
         })
         .drawVenn()
+        .hover()
         .on('click', function () {
             console.log(this.selectCollection
             )

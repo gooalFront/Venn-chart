@@ -31,7 +31,6 @@ import "babel-polyfill";
             if (!id && typeof id != 'string') throw new Error('parent-id error');
             this.colors = ['rgba(141,211,199,0.5)', 'rgba(255,255,179,0.5)', 'rgba(251,128,114,0.5)', 'rgba(188,128,189,0.5)', 'rgba(128,177,211,0.5)'];
             this.parent = document.getElementById(id);
-            this.parentid = id;
             this.WNT2 = {};
             this.WNT3 = {};
             this.WNT4 = {};
@@ -196,7 +195,7 @@ import "babel-polyfill";
             if (this.mouseover || this.mouseout) this.hover(this.mouseover || null, this.mouseout || null);
             // apply events
             this[applyEvents]();
-            this.hover();
+            // this.hover();
             return this;
         }
 
@@ -364,11 +363,11 @@ import "babel-polyfill";
                                     // 如果在选择的集合里
                                     var res = this[isInArray](this.$select.$data.result, this.selectCollection, 'CompareGroup');
                                     if (res.status) {
-                                        document.querySelector("path[areaindex=" + this.$select.$data.result.CompareGroup).setAttribute('class', '');
+                                        this.parent.querySelector("path[areaindex=" + this.$select.$data.result.CompareGroup).setAttribute('class', '');
                                         this.selectCollection.splice(res.index, 1);
                                     } else {
                                         this.selectCollection.push(this.$select.$data.result)
-                                        document.querySelector("path[areaindex=" + this.$select.$data.result.CompareGroup).setAttribute('class', 'active');
+                                        this.parent.querySelector("path[areaindex=" + this.$select.$data.result.CompareGroup).setAttribute('class', 'active');
                                     }
                                 }
                                 eventItem.fn && eventItem.fn.call(this);
