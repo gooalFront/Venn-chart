@@ -851,9 +851,9 @@ import "babel-polyfill";
                         <rect x="720" y="180" width="28" height="20" data-color-index=4 fill="${this.colors[4]}"></rect>
                     </g>
                     <g>
-                        <text x="760" y="95" font-size="12" font-weight="bold">${this.WNT5.titleName4}</text>
-                        <text x="760" y="120" font-size="12" font-weight="bold">${this.WNT5.titleName5}</text>
-                        <text x="760" y="145" font-size="12" font-weight="bold">${this.WNT5.titleName3}</text>
+                        <text x="760" y="95" font-size="12" font-weight="bold">${this.WNT5.titleName3}</text>
+                        <text x="760" y="120" font-size="12" font-weight="bold">${this.WNT5.titleName4}</text>
+                        <text x="760" y="145" font-size="12" font-weight="bold">${this.WNT5.titleName5}</text>
                         <text x="760" y="170" font-size="12" font-weight="bold">${this.WNT5.titleName1}</text>
                         <text x="760" y="195" font-size="12" font-weight="bold">${this.WNT5.titleName2}</text>
                     </g>
