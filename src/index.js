@@ -406,12 +406,12 @@ import "babel-polyfill";
                         </g>
                         <g>  
                             <g class="lenged">
-                                <rect data-color-index=0 width="28" height="20" fill="${this.colors[0]}"  x="510.483" y="30.905"  />
-                                <rect data-color-index=1 width="28" height="20" fill="${this.colors[1]}"  x="510.483" y="60.905"  />
+                                <rect data-color-index=0 width="14" height="14" fill="${this.colors[0]}"  x="492.483" y="30.905"  />
+                                <rect data-color-index=1 width="14" height="14" fill="${this.colors[1]}"  x="492.483" y="50.905"  />
                             </g>
                             <g>
-                                <text x="550" y="45.905" fill="#333" font-size="12" font-weight="bold">${this.WNT2.titleName1}</text>			
-                                <text x="550" y="75.905" fill="#333" font-size="12" font-weight="bold">${this.WNT2.titleName2}</text>	
+                                <text x="510" y="42.905" fill="#333" font-size="12" font-weight="bold">${this.WNT2.titleName1}</text>			
+                                <text x="510" y="62.905" fill="#333" font-size="12" font-weight="bold">${this.WNT2.titleName2}</text>	
                             </g>
                         </g>
                     </g>
@@ -456,14 +456,14 @@ import "babel-polyfill";
                         C336.756,281.96,315.521,288.191,292.83,288.191z" />
                     </g>
                     <g class="lenged">
-                        <rect width="28" height="20" data-color-index=0 fill="${this.colors[0]}" x="460" y="85"></rect>	
-                        <rect width="28" height="20" data-color-index=1 fill="${this.colors[1]}" x="460" y="60"></rect>	
-                        <rect width="28" height="20" data-color-index=2 fill="${this.colors[2]}" x="460" y="110"></rect>	
+                        <rect width="14" height="14" data-color-index=0 fill="${this.colors[0]}" x="440" y="80"></rect>	
+                        <rect width="14" height="14" data-color-index=1 fill="${this.colors[1]}" x="440" y="60"></rect>	
+                        <rect width="14" height="14" data-color-index=2 fill="${this.colors[2]}" x="440" y="100"></rect>	
                     </g>
                     <g>
-                        <text x="498" y="75" fill="#333" font-weight="bold" font-size="12">${this.WNT3.titleName1}</text>
-                        <text x="498" y="100" fill="#333" font-weight="bold" font-size="12">${this.WNT3.titleName3}</text>
-                        <text x="498" y="122" fill="#333" font-weight="bold" font-size="12">${this.WNT3.titleName2}</text>
+                        <text x="458" y="72" fill="#333" font-weight="bold" font-size="12">${this.WNT3.titleName1}</text>
+                        <text x="458" y="92" fill="#333" font-weight="bold" font-size="12">${this.WNT3.titleName3}</text>
+                        <text x="458" y="112" fill="#333" font-weight="bold" font-size="12">${this.WNT3.titleName2}</text>
                     </g>
                 </svg>`,
                 // four
@@ -588,20 +588,20 @@ import "babel-polyfill";
                         C338.093,311.5,312.054,300.016,285.459,282.41z" />
                     </g>
                     <g class="lenged">
-                        <rect width="28" height="20" data-color-index=0 fill="${this.colors[0]}" x="560" y="110"></rect>
-                        <rect width="28" height="20" data-color-index=1 fill="${this.colors[1]}" x="560" y="135"></rect>
-                        <rect width="28" height="20" data-color-index=2 fill="${this.colors[2]}" x="560" y="85"></rect>
-                        <rect width="28" height="20" data-color-index=3 fill="${this.colors[3]}" x="560" y="60"></rect>
+                        <rect width="14" height="14" data-color-index=0 fill="${this.colors[0]}" x="542" y="100"></rect>
+                        <rect width="14" height="14" data-color-index=1 fill="${this.colors[1]}" x="542" y="120"></rect>
+                        <rect width="14" height="14" data-color-index=2 fill="${this.colors[2]}" x="542" y="80"></rect>
+                        <rect width="14" height="14" data-color-index=3 fill="${this.colors[3]}" x="542" y="60"></rect>
                     </g>
                     <g>
-                        <text font-weight="bold" fill="#333" x="600" y="125" font-size="12">${this.WNT4.titleName1}</text>
-                        <text font-weight="bold" fill="#333" x="600" y="75" font-size="12">${this.WNT4.titleName2}</text>
-                        <text font-weight="bold" fill="#333" x="600" y="102" font-size="12">${this.WNT4.titleName3}</text>
-                        <text font-weight="bold" fill="#333" x="600" y="152" font-size="12">${this.WNT4.titleName4}</text>
+                        <text font-weight="bold" fill="#333" x="560" y="112" font-size="12">${this.WNT4.titleName1}</text>
+                        <text font-weight="bold" fill="#333" x="560" y="72" font-size="12">${this.WNT4.titleName2}</text>
+                        <text font-weight="bold" fill="#333" x="560" y="92" font-size="12">${this.WNT4.titleName3}</text>
+                        <text font-weight="bold" fill="#333" x="560" y="130" font-size="12">${this.WNT4.titleName4}</text>
                     </g>
                 </svg>`,
                 // five
-                `<svg class="venn_chart" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1000" height="750px" style="background-color:#fff; margin:0 auto;" viewBox="-50 0 1000 750" enable-background="new -20 0 1000 750"
+                `<svg class="venn_chart" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1000" height="750px" style="background-color:#fff; margin:0 auto;" viewBox="-50 0 1000 680" enable-background="new -20 0 1000 680"
                 xml:space="preserve">
                     <!--底图形状部分（五个形状，及其边框）-->
                                         <!--
@@ -844,18 +844,18 @@ import "babel-polyfill";
                         C753.576,342.574,718.055,280.568,658.955,244.262z" />
                     </g>
                     <g class="lenged">
-                        <rect x="720" y="80" width="28" height="20" data-color-index=0 fill="${this.colors[0]}"></rect>
-                        <rect x="720" y="105" width="28" height="20" data-color-index=1 fill="${this.colors[1]}"></rect>
-                        <rect x="720" y="130" width="28" height="20" data-color-index=2 fill="${this.colors[2]}"></rect>
-                        <rect x="720" y="155" width="28" height="20" data-color-index=3 fill="${this.colors[3]}"></rect>
-                        <rect x="720" y="180" width="28" height="20" data-color-index=4 fill="${this.colors[4]}"></rect>
+                        <rect x="770" y="80" width="14" height="14" data-color-index=0 fill="${this.colors[0]}"></rect>
+                        <rect x="770" y="100" width="14" height="14" data-color-index=1 fill="${this.colors[1]}"></rect>
+                        <rect x="770" y="120" width="14" height="14" data-color-index=2 fill="${this.colors[2]}"></rect>
+                        <rect x="770" y="140" width="14" height="14" data-color-index=3 fill="${this.colors[3]}"></rect>
+                        <rect x="770" y="160" width="14" height="14" data-color-index=4 fill="${this.colors[4]}"></rect>
                     </g>
                     <g>
-                        <text x="760" y="95" font-size="12" font-weight="bold">${this.WNT5.titleName4}</text>
-                        <text x="760" y="120" font-size="12" font-weight="bold">${this.WNT5.titleName5}</text>
-                        <text x="760" y="145" font-size="12" font-weight="bold">${this.WNT5.titleName3}</text>
-                        <text x="760" y="170" font-size="12" font-weight="bold">${this.WNT5.titleName1}</text>
-                        <text x="760" y="195" font-size="12" font-weight="bold">${this.WNT5.titleName2}</text>
+                        <text x="788" y="92" font-size="12" font-weight="bold">${this.WNT5.titleName3}</text>
+                        <text x="788" y="110" font-size="12" font-weight="bold">${this.WNT5.titleName4}</text>
+                        <text x="788" y="131" font-size="12" font-weight="bold">${this.WNT5.titleName5}</text>
+                        <text x="788" y="152" font-size="12" font-weight="bold">${this.WNT5.titleName1}</text>
+                        <text x="788" y="172" font-size="12" font-weight="bold">${this.WNT5.titleName2}</text>
                     </g>
                 </svg>`
             ];
