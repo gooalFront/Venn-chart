@@ -29,7 +29,7 @@ import "babel-polyfill";
     class Venn {
         constructor({ id, DEBUG = false }) {
             if (!id && typeof id != 'string') throw new Error('parent-id error');
-            this.colors = ['rgba(141,211,199,0.5)', 'rgba(255,255,179,0.5)', 'rgba(251,128,114,0.5)', 'rgba(188,128,189,0.5)', 'rgba(128,177,211,0.5)'];
+            this.colors = ['rgba(21, 209, 118,0.3)', 'rgba(252, 93, 0,0.3)', 'rgba(252, 25, 40,0.3)', 'rgba(214, 21, 150,0.3)', 'rgba(167, 218, 248,0.3)'];
             this.parent = document.getElementById(id);
             this.WNT2 = {};
             this.WNT3 = {};
