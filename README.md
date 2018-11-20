@@ -1,5 +1,4 @@
-### Venn  [![Build Status](https://travis-ci.org/YeahPotato/Venn.svg?branch=master)](https://travis-ci.org/YeahPotato/Venn)      
-Demo `http:/yeahpotato.github.io/Venn`
+### Venn 
 
 #### start
 `git clone git@54.223.70.246:yangwd/Venn-chart.git`   

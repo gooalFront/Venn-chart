@@ -1,71 +1,71 @@
 import './css/index.css';
 
 window.onload = function () {
-
-    var compareGroup = ['head200w_11_vs_head200w_19', 'head200w_19_vs_head200w_23', 'head200w_11_vs_head200w_23'];
-    var data = [{
+    var data2 = [{
+        "result": {
+            "GeneIDs": [],
+            "CompareGroup": "head200w_19_vs_head200w_23∩head200w_11_vs_head200w_19",
+            "Count": 1278
+        }
+        }, {
+            "result": {
+                "GeneIDs": [],
+                "CompareGroup": "head200w_11_vs_head200w_19",
+                "Count": 2366
+            }
+        }, {
+            "result": {
+                "GeneIDs": [],
+                "CompareGroup": "head200w_19_vs_head200w_23",
+                "Count": 2260
+            }
+        }
+    ];
+    var data3 = [{
         "result": {
             "GeneIDs": [],
             "CompareGroup": "head200w_11_vs_head200w_19∩head200w_19_vs_head200w_23",
             "Count": 1195
         }
-    }, {
-        "result": {
-            "GeneIDs": [],
-            "CompareGroup": "head200w_11_vs_head200w_19",
-            "Count": 1131
+        }, {
+            "result": {
+                "GeneIDs": [],
+                "CompareGroup": "head200w_11_vs_head200w_19",
+                "Count": 1131
+            }
+        }, {
+            "result": {
+                "GeneIDs": [],
+                "CompareGroup": "head200w_11_vs_head200w_19∩head200w_19_vs_head200w_23∩head200w_11_vs_head200w_23",
+                "Count": 83
+            }
+        }, {
+            "result": {
+                "GeneIDs": [],
+                "CompareGroup": "head200w_11_vs_head200w_19∩head200w_11_vs_head200w_23",
+                "Count": 1235
+            }
+        }, {
+            "result": {
+                "GeneIDs": [],
+                "CompareGroup": "head200w_19_vs_head200w_23",
+                "Count": 1076
+            }
+        }, {
+            "result": {
+                "GeneIDs": [],
+                "CompareGroup": "head200w_19_vs_head200w_23∩head200w_11_vs_head200w_23",
+                "Count": 1184
+            }
+        }, {
+            "result": {
+                "GeneIDs": [],
+                "CompareGroup": "head200w_11_vs_head200w_23",
+                "Count": 1143
+            }
         }
-    }, {
-        "result": {
-            "GeneIDs": [],
-            "CompareGroup": "head200w_11_vs_head200w_19∩head200w_19_vs_head200w_23∩head200w_11_vs_head200w_23",
-            "Count": 83
-        }
-    }, {
-        "result": {
-            "GeneIDs": [],
-            "CompareGroup": "head200w_11_vs_head200w_19∩head200w_11_vs_head200w_23",
-            "Count": 1235
-        }
-    }, {
-        "result": {
-            "GeneIDs": [],
-            "CompareGroup": "head200w_19_vs_head200w_23",
-            "Count": 1076
-        }
-    }, {
-        "result": {
-            "GeneIDs": [],
-            "CompareGroup": "head200w_19_vs_head200w_23∩head200w_11_vs_head200w_23",
-            "Count": 1184
-        }
-    }, {
-        "result": {
-            "GeneIDs": [],
-            "CompareGroup": "head200w_11_vs_head200w_23",
-            "Count": 1143
-        }
-    }];
-    var data2 = [{
-        "result": {
-            "GeneIDs": [],
-            "CompareGroup": "head200w_11_vs_head200w_19∩head200w_19_vs_head200w_23",
-            "Count": 1278
-        }
-    }, {
-        "result": {
-            "GeneIDs": [],
-            "CompareGroup": "head200w_11_vs_head200w_19",
-            "Count": 2366
-        }
-    }, {
-        "result": {
-            "GeneIDs": [],
-            "CompareGroup": "head200w_19_vs_head200w_23",
-            "Count": 2260
-        }
-    }];
-
+    ];
+   
     var data4 = [
         {
             "result": {
@@ -159,7 +159,6 @@ window.onload = function () {
             }
         }
     ];
-
     var data5 = [
         {
             "result": {
@@ -351,23 +350,23 @@ window.onload = function () {
     ]
     var compareGroup5 = ["kegg", "nr", "nt", "go","swissport"];
     var compareGroup4 = ["kegg", "nr", "nt", "go"];
+    var compareGroup3 = ['head200w_11_vs_head200w_19', 'head200w_19_vs_head200w_23', 'head200w_11_vs_head200w_23'];
     var compareGroup2 = ['head200w_19_vs_head200w_23', 'head200w_11_vs_head200w_19']
 
     let flag = '';
 
     var oV = new Venn({ id: "venn_wrap" }).config({
-        data: data5,
-        compareGroup: compareGroup5,
-        isMultipleSelect: true
+        data: data3,
+        compareGroup: compareGroup3,
+        isMultipleSelect: false
     }).drawVenn()
-        .hover(function () {
-            this.$select.$el.setAttribute('opacity', '0.7')
-        }, function () {
-            this.$select.$el.setAttribute('opacity', '0')
-        })
+        // .hover(function () {
+        //     this.$select.$el.setAttribute('opacity', '0.7')
+        // }, function () {
+        //     this.$select.$el.setAttribute('opacity', '0')
+        // })
         .on('click', function () {
-            console.log(this.selectCollection
-            )
+            console.log(this.$select.$data)
         })
         .lengedclick(function (ev, $select) {
             panel.style.left = (ev.pageX + 20) + 'px';
@@ -379,14 +378,14 @@ window.onload = function () {
 
     var oV2 = new Venn({ id: "venn_wrap2" })
         .config({
-            data: data4,
-            compareGroup: compareGroup4
+            data: data2,
+            compareGroup: compareGroup2,
+            isMultipleSelect:true,
         })
         .drawVenn()
         .hover()
         .on('click', function () {
-            console.log(this.selectCollection
-            )
+            console.log(this.selectCollection)
         })
         .lengedclick(function (ev, $select) {
             panel.style.left = (ev.pageX + 20) + 'px';

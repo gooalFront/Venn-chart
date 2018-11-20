@@ -366,7 +366,7 @@ import "babel-polyfill";
                                         this.parent.querySelector("path[areaindex=" + this.$select.$data.result.CompareGroup).setAttribute('class', '');
                                         this.selectCollection.splice(res.index, 1);
                                     } else {
-                                        this.selectCollection.push(this.$select.$data.result)
+                                        this.selectCollection.push(this.$select.$data)
                                         this.parent.querySelector("path[areaindex=" + this.$select.$data.result.CompareGroup).setAttribute('class', 'active');
                                     }
                                 }
@@ -864,7 +864,7 @@ import "babel-polyfill";
         [isInArray](x, arr, flag) {
             for (var i = 0; i < arr.length; i++) {
                 if (flag) {
-                    if (arr[i][flag] === x[flag]) {
+                    if (arr[i]['result'][flag] === x[flag]) {
                         return { "status": true, "index": i };
                     }
                 } else {
