@@ -395,6 +395,41 @@ window.onload = function () {
         });
 
 
+        var oV4 = new Venn({ id: "venn_wrap4" })
+        .config({
+            data: data2,
+            compareGroup: compareGroup4,
+            isMultipleSelect:true,
+        })
+        .drawVenn()
+        .hover()
+        .on('click', function () {
+            console.log(this.selectCollection)
+        })
+        .lengedclick(function (ev, $select) {
+            panel.style.left = (ev.pageX + 20) + 'px';
+            panel.style.top = (ev.pageY - 50) + 'px';
+            panel.style.display = 'block';
+            flag = oV4;
+        });
+
+        var oV5 = new Venn({ id: "venn_wrap5" })
+        .config({
+            data: data2,
+            compareGroup: compareGroup5,
+            isMultipleSelect:true,
+        })
+        .drawVenn()
+        .hover()
+        .on('click', function () {
+            console.log(this.selectCollection)
+        })
+        .lengedclick(function (ev, $select) {
+            panel.style.left = (ev.pageX + 20) + 'px';
+            panel.style.top = (ev.pageY - 50) + 'px';
+            panel.style.display = 'block';
+            flag = oV5;
+        });
     // gen color panel
     var colorPanel = [
         "rgba(255,0,0,0.2)", "rgba(255,205,51,0.2)", "rgba(255,255,51,0.2)", "rgba(168,217,115,0.2)", "rgba(51,192,115,0.2)", "rgba(51,195,243,0.2)", "rgba(51,141,205,0.2)", "rgba(51,77,128,0.2)", "rgba(141,89,179,0.2)", "rgba(0,0,0,0.2)", "rgba(255,0,0,0.4)", "rgba(255,205,51,0.4)", "rgba(255,255,51,0.4)", "rgba(168,217,115,0.4)", "rgba(51,192,115,0.4)", "rgba(51,195,243,0.4)", "rgba(51,141,205,0.4)", "rgba(51,77,128,0.4)", "rgba(141,89,179,0.4)", "rgba(0,0,0,0.4)", "rgba(255,0,0,0.6)", "rgba(255,205,51,0.6)", "rgba(255,255,51,0.6)", "rgba(168,217,115,0.6)", "rgba(51,192,115,0.6)", "rgba(51,195,243,0.6)", "rgba(51,141,205,0.6)", "rgba(51,77,128,0.6)", "rgba(141,89,179,0.6)", "rgba(0,0,0,0.6)", "rgba(255,0,0,0.8)", "rgba(255,205,51,0.8)", "rgba(255,255,51,0.8)", "rgba(168,217,115,0.8)", "rgba(51,192,115,0.8)", "rgba(51,195,243,0.8)", "rgba(51,141,205,0.8)", "rgba(51,77,128,0.8)", "rgba(141,89,179,0.8)", "rgba(0,0,0,0.8)"
