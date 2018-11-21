@@ -383,7 +383,7 @@ import "babel-polyfill";
             this.layout = [
                 null, null,
                 // two 
-                `<svg class="venn_chart" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="850" height="300px" viewBox="0 0 850 300" enable-background="new 0 0 850 300" xml:space="preserve" style="background-color:#fff;">
+                `<svg class="venn_chart" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="800" height="300px" viewBox="0 0 850 300" enable-background="new 0 0 850 300" xml:space="preserve" style="background-color:#fff;">
                     <g>
                         <g class="group">
                             <circle  stroke="#666" stroke-width="2" fill="${this.colors[0]}" cx="211.483" cy="132.905" r="127" />
@@ -467,7 +467,7 @@ import "babel-polyfill";
                     </g>
                 </svg>`,
                 // four
-                `<svg class="venn_chart" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="900" height="400px" viewBox="0 0 900 400" enable-background="new 0 0 900 400" xml:space="preserve">
+                `<svg  class="venn_chart" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="800" height="400px" viewBox="0 0 900 400" enable-background="new 0 0 900 400" xml:space="preserve">
                     <g class="group" transform="matrix(1 0 0 1 53 40.5)">                            
                         <ellipse stroke="#666" stroke-width="2" transform="matrix(0.7062 -0.708 0.708 0.7062 -90.7325 165.0259)"  fill="${this.colors[0]}" cx="153.48" cy="191.84" rx="108.558" ry="187.758" />
                         <ellipse stroke="#666" stroke-width="2" transform="matrix(-0.7062 -0.708 0.708 -0.7062 394.2766 545.2882)"  fill="${this.colors[1]}" cx="310.274" cy="190.84" rx="108.558" ry="187.758" />
@@ -487,31 +487,31 @@ import "babel-polyfill";
                         [10] [11] [12] [13]
                         [15]
                         -->     
-                    <g class="chart_label" style="display:block;">
+                    <g class="chart_label"  style="display:block;">
                         <!--1-->
-                        <text transform="matrix(1 0 0 1 213 81)" width="100" height="30" text-anchor="middle" font-family="Arial" font-size="22">${this.WNT4.B}</text>
+                        <text transform="matrix(0.9 0 0 0.9 213 81)" width="100" height="30" text-anchor="middle" font-family="Arial" font-size="22">${this.WNT4.B}</text>
                         <!--2-->
-                        <text transform="matrix(1 0 0 1 288 122)" width="100" height="30" text-anchor="middle" font-family="Arial" font-size="22">${this.WNT4.BC}</text>                         
+                        <text transform="matrix(0.9 0 0 0.9 288 122)" width="100" height="30" text-anchor="middle" font-family="Arial" font-size="22">${this.WNT4.BC}</text>                         
                         <!--3-->               
-                        <text transform="matrix(1 0 0 1 363 81)" width="100" height="30" text-anchor="middle" font-family="Arial" font-size="22">${this.WNT4.C}</text>                    
+                        <text transform="matrix(0.9 0 0 0.9 363 81)" width="100" height="30" text-anchor="middle" font-family="Arial" font-size="22">${this.WNT4.C}</text>                    
                         <!--4-->
-                        <text transform="matrix(1 0 0 1 194 133)" width="100" height="30" text-anchor="middle" font-family="Arial" font-size="22">${this.WNT4.AB}</text>                              
+                        <text transform="matrix(0.9 0 0 0.9 194 133)" width="100" height="30" text-anchor="middle" font-family="Arial" font-size="22">${this.WNT4.AB}</text>                              
                         <!--5-->          
-                        <text transform="matrix(1 0 0 1 233 177)" width="100" height="30" text-anchor="middle" font-family="Arial" font-size="22">${this.WNT4.ABC}</text>                               
+                        <text transform="matrix(0.9 0 0 0.9 233 177)" width="100" height="30" text-anchor="middle" font-family="Arial" font-size="22">${this.WNT4.ABC}</text>                               
                         <!--6-->         
-                        <text transform="matrix(1 0 0 1 288 231)" width="100" height="30" text-anchor="middle" font-family="Arial" font-size="22">${this.WNT4.ABCD}</text>                    
+                        <text transform="matrix(0.9 0 0 0.9 288 231)" width="100" height="30" text-anchor="middle" font-family="Arial" font-size="22">${this.WNT4.ABCD}</text>                    
                         <!--7-->
-                        <text transform="matrix(1 0 0 1 342 177)" width="100" height="30" text-anchor="middle" font-family="Arial" font-size="22">${this.WNT4.BCD}</text>                                   
+                        <text transform="matrix(0.9 0 0 0.9 342 177)" width="100" height="30" text-anchor="middle" font-family="Arial" font-size="22">${this.WNT4.BCD}</text>                                   
                         <!--8-->     
-                        <text transform="matrix(1 0 0 1 382 133)" width="100" height="30" text-anchor="middle" font-family="Arial" font-size="22">${this.WNT4.CD}</text>                                    
+                        <text transform="matrix(0.9 0 0 0.9 382 133)" width="100" height="30" text-anchor="middle" font-family="Arial" font-size="22">${this.WNT4.CD}</text>                                    
                         <!--9-->    
-                        <text transform="matrix(1 0 0 1 118 182)" width="100" height="30" text-anchor="middle" font-family="Arial" font-size="22">${this.WNT4.A}</text>                    
+                        <text transform="matrix(0.9 0 0 0.9 118 182)" width="100" height="30" text-anchor="middle" font-family="Arial" font-size="22">${this.WNT4.A}</text>                    
                         <!--10-->
-                        <text transform="matrix(1 0 0 1 180 264)" width="100" height="30" text-anchor="middle" font-family="Arial" font-size="22">${this.WNT4.AC}</text>                                       
+                        <text transform="matrix(0.9 0 0 0.9 180 264)" width="100" height="30" text-anchor="middle" font-family="Arial" font-size="22">${this.WNT4.AC}</text>                                       
                         <!--11--> 
-                        <text transform="matrix(1 0 0 1 242 289)" width="100" height="30" text-anchor="middle" font-family="Arial" font-size="22">${this.WNT4.ACD}</text>                                        
+                        <text transform="matrix(0.9 0 0 0.9 242 289)" width="100" height="30" text-anchor="middle" font-family="Arial" font-size="22">${this.WNT4.ACD}</text>                                        
                         <!--12-->
-                        <text transform="matrix(1 0 0 1 329 289)" width="100" height="30" text-anchor="middle" font-family="Arial" font-size="22">${this.WNT4.ABD}</text>                                        
+                        <text transform="matrix(0.9 0 0 0.9 329 289)" width="100" height="30" text-anchor="middle" font-family="Arial" font-size="22">${this.WNT4.ABD}</text>                                        
                         <!--13-->
                         <text transform="matrix(1 0 0 1 384 264)" width="100" height="30" text-anchor="middle" font-family="Arial" font-size="22">${this.WNT4.BD}</text>                                        
                         <!--14-->
@@ -588,20 +588,20 @@ import "babel-polyfill";
                         C338.093,311.5,312.054,300.016,285.459,282.41z" />
                     </g>
                     <g class="lenged">
-                        <rect width="14" height="14" data-color-index=0 fill="${this.colors[0]}" x="542" y="100"></rect>
-                        <rect width="14" height="14" data-color-index=1 fill="${this.colors[1]}" x="542" y="120"></rect>
-                        <rect width="14" height="14" data-color-index=2 fill="${this.colors[2]}" x="542" y="80"></rect>
-                        <rect width="14" height="14" data-color-index=3 fill="${this.colors[3]}" x="542" y="60"></rect>
+                        <rect transform="matrix(1.1 0 0 1.1 0 0 )" width="14" height="14" data-color-index=0 fill="${this.colors[0]}" x="512" y="100"></rect>
+                        <rect transform="matrix(1.1 0 0 1.1 0 0 )" width="14" height="14" data-color-index=1 fill="${this.colors[1]}" x="512" y="120"></rect>
+                        <rect transform="matrix(1.1 0 0 1.1 0 0 )" width="14" height="14" data-color-index=2 fill="${this.colors[2]}" x="512" y="80"></rect>
+                        <rect transform="matrix(1.1 0 0 1.1 0 0 )" width="14" height="14" data-color-index=3 fill="${this.colors[3]}" x="512" y="60"></rect>
                     </g>
                     <g>
-                        <text font-weight="bold" fill="#333" x="560" y="112" font-size="12">${this.WNT4.titleName1}</text>
-                        <text font-weight="bold" fill="#333" x="560" y="72" font-size="12">${this.WNT4.titleName2}</text>
-                        <text font-weight="bold" fill="#333" x="560" y="92" font-size="12">${this.WNT4.titleName3}</text>
-                        <text font-weight="bold" fill="#333" x="560" y="130" font-size="12">${this.WNT4.titleName4}</text>
+                        <text transform="matrix(1.1 0 0 1.1 0 0 )" font-weight="bold" fill="#333" x="530" y="112" font-size="12">${this.WNT4.titleName1}</text>
+                        <text transform="matrix(1.1 0 0 1.1 0 0 )" font-weight="bold" fill="#333" x="530" y="72" font-size="12">${this.WNT4.titleName2}</text>
+                        <text transform="matrix(1.1 0 0 1.1 0 0 )" font-weight="bold" fill="#333" x="530" y="92" font-size="12">${this.WNT4.titleName3}</text>
+                        <text transform="matrix(1.1 0 0 1.1 0 0 )" font-weight="bold" fill="#333" x="530" y="130" font-size="12">${this.WNT4.titleName4}</text>
                     </g>
                 </svg>`,
                 // five
-                `<svg class="venn_chart" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1000" height="750px" style="background-color:#fff; margin:0 auto;" viewBox="-50 0 1000 680" enable-background="new -20 0 1000 680"
+                `<svg  class="venn_chart" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="800" height="600px" style="background-color:#fff; margin:0 auto;" viewBox="20 0 1000 680" enable-background="new -20 0 1000 680"
                 xml:space="preserve">
                     <!--底图形状部分（五个形状，及其边框）-->
                                         <!--
@@ -844,18 +844,18 @@ import "babel-polyfill";
                         C753.576,342.574,718.055,280.568,658.955,244.262z" />
                     </g>
                     <g class="lenged">
-                        <rect x="770" y="80" width="14" height="14" data-color-index=0 fill="${this.colors[0]}"></rect>
-                        <rect x="770" y="100" width="14" height="14" data-color-index=1 fill="${this.colors[1]}"></rect>
-                        <rect x="770" y="120" width="14" height="14" data-color-index=2 fill="${this.colors[2]}"></rect>
-                        <rect x="770" y="140" width="14" height="14" data-color-index=3 fill="${this.colors[3]}"></rect>
-                        <rect x="770" y="160" width="14" height="14" data-color-index=4 fill="${this.colors[4]}"></rect>
+                        <rect transform="matrix(1.2 0 0 1.2 0 0)" x="610" y="80" width="14" height="14" data-color-index=0 fill="${this.colors[0]}"></rect>
+                        <rect transform="matrix(1.2 0 0 1.2 0 0)" x="610" y="100" width="14" height="14" data-color-index=1 fill="${this.colors[1]}"></rect>
+                        <rect transform="matrix(1.2 0 0 1.2 0 0)" x="610" y="120" width="14" height="14" data-color-index=2 fill="${this.colors[2]}"></rect>
+                        <rect transform="matrix(1.2 0 0 1.2 0 0)" x="610" y="140" width="14" height="14" data-color-index=3 fill="${this.colors[3]}"></rect>
+                        <rect transform="matrix(1.2 0 0 1.2 0 0)" x="610" y="160" width="14" height="14" data-color-index=4 fill="${this.colors[4]}"></rect>
                     </g>
                     <g>
-                        <text x="788" y="92" font-size="12" font-weight="bold">${this.WNT5.titleName3}</text>
-                        <text x="788" y="110" font-size="12" font-weight="bold">${this.WNT5.titleName4}</text>
-                        <text x="788" y="131" font-size="12" font-weight="bold">${this.WNT5.titleName5}</text>
-                        <text x="788" y="152" font-size="12" font-weight="bold">${this.WNT5.titleName1}</text>
-                        <text x="788" y="172" font-size="12" font-weight="bold">${this.WNT5.titleName2}</text>
+                        <text transform="matrix(1.2 0 0 1.2 0 0)" x="628" y="92" font-size="12" font-weight="bold">${this.WNT5.titleName3}</text>
+                        <text transform="matrix(1.2 0 0 1.2 0 0)" x="628" y="110" font-size="12" font-weight="bold">${this.WNT5.titleName4}</text>
+                        <text transform="matrix(1.2 0 0 1.2 0 0)" x="628" y="131" font-size="12" font-weight="bold">${this.WNT5.titleName5}</text>
+                        <text transform="matrix(1.2 0 0 1.2 0 0)" x="628" y="152" font-size="12" font-weight="bold">${this.WNT5.titleName1}</text>
+                        <text transform="matrix(1.2 0 0 1.2 0 0)" x="628" y="172" font-size="12" font-weight="bold">${this.WNT5.titleName2}</text>
                     </g>
                 </svg>`
             ];
