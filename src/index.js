@@ -369,6 +369,11 @@ import "babel-polyfill";
                                         this.selectCollection.push(this.$select.$data)
                                         this.parent.querySelector("path[areaindex=" + this.$select.$data.result.CompareGroup).setAttribute('class', 'active');
                                     }
+                                }else if(eventItem.event==='click'){
+                                    var links = this.parent.querySelectorAll(".pathLinkArea path");
+                                    links.forEach(v=>v.setAttribute('class',''));
+                                    this.selectCollection = this.$select.$data;
+                                    this.parent.querySelector("path[areaindex=" + this.$select.$data.result.CompareGroup).setAttribute('class', 'active');
                                 }
                                 eventItem.fn && eventItem.fn.call(this);
                             }, false);
