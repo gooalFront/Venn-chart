@@ -368,7 +368,14 @@ window.onload = function () {
         .on('click', function () {
             console.log(this.$select.$data)
         })
-        .lengedclick(function (ev, $select) {
+        .legendHover(function(event,legend){
+            var text = document.createElement('title');
+            text.innerHTML = 'draw';
+            legend.appendChild(text)
+        },function(){
+            console.log(arguments)
+        })
+        .lengedDblclick(function (ev, $select) {
             panel.style.left = (ev.pageX + 20) + 'px';
             panel.style.top = (ev.pageY - 50) + 'px';
             panel.style.display = 'block';

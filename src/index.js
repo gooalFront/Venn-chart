@@ -329,6 +329,45 @@ import "babel-polyfill";
             return this;
         }
 
+        lengedDblclick(arg) {
+            let lenges = this.parent.querySelectorAll('.lenged *');
+            Array.from(lenges).forEach((val, index) => {
+                val.addEventListener('dblclick', (ev) => {
+                    this.lengedClickIndex = val.getAttribute('data-color-index');
+
+                    this.$select = {
+                        $el: null,
+                        data: null
+                    };
+                    this.$select.$el = val;
+
+                    arg && arg.call(this, ev, this.$select);
+                    ev.stopPropagation();
+                }, false);
+            });
+
+            return this;
+        }
+
+        legendHover(mouseoverCallback,mouseoutCallback){
+            let lenges = this.parent.querySelectorAll('.lenged *');
+            Array.from(lenges).forEach((val, index) => {
+                // mouseover
+                val.addEventListener('mouseover', (ev) => {
+                    mouseoverCallback && mouseoverCallback.call(this, ev,val);
+                    ev.stopPropagation();
+                }, false);
+
+                // mouseout
+                val.addEventListener('mouseout',(ev)=>{
+                    mouseoutCallback && mouseoutCallback.call(this,ev,val);
+                    ev.stopPropagation();
+                },false)
+            });
+
+            return this;
+        }
+
         // showLabel
         showLabel() {
             this.parent.getElementsByClassName('chart_label')[0].style.display = 'block';
