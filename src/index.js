@@ -196,6 +196,12 @@ import "babel-polyfill";
             // apply events
             this[applyEvents]();
             // this.hover();
+            let _this = this;
+            this.parent.querySelector('.venn_chart').addEventListener('click',function(ev){
+                _this.svgClick();
+                ev.stopPropagation();
+            },false);
+
             return this;
         }
 
@@ -307,9 +313,8 @@ import "babel-polyfill";
             return this;
         }
 
-
         // lenged click event
-        lengedclick(arg) {
+        legendclick(arg) {
             let lenges = this.parent.querySelectorAll('.lenged *');
             Array.from(lenges).forEach((val, index) => {
                 val.addEventListener('click', (ev) => {
@@ -329,7 +334,7 @@ import "babel-polyfill";
             return this;
         }
 
-        lengedDblclick(arg) {
+        legendDblclick(arg) {
             let lenges = this.parent.querySelectorAll('.lenged *');
             Array.from(lenges).forEach((val, index) => {
                 val.addEventListener('dblclick', (ev) => {
@@ -396,7 +401,7 @@ import "babel-polyfill";
                 this.el.forEach((val, index) => {
                     if (this.events) {
                         this.events.forEach((eventItem, i) => {
-                            val.addEventListener(eventItem.event, () => {
+                            val.addEventListener(eventItem.event, (ev) => {
                                 // 如果是点击事件 并且设置了多选 需要返回点击选择的集合
                                 if (eventItem.event === 'click' && this.isMultipleSelect) {
                                     // 如果在选择的集合里
@@ -414,12 +419,19 @@ import "babel-polyfill";
                                     this.selectCollection = this.$select.$data;
                                     this.parent.querySelector("path[areaindex=" + this.$select.$data.result.CompareGroup).setAttribute('class', 'active');
                                 }
+                                ev.stopPropagation();
                                 eventItem.fn && eventItem.fn.call(this);
                             }, false);
                         })
                     }
                 })
             }
+        }
+
+        svgClick(){
+            this.selectCollection = [];
+            var links = this.parent.querySelectorAll(".pathLinkArea path");
+            links.forEach(v=>v.setAttribute('class',''));
         }
 
         // init string template

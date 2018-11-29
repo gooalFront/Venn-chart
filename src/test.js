@@ -360,11 +360,6 @@ window.onload = function () {
         compareGroup: compareGroup3,
         isMultipleSelect: false
     }).drawVenn()
-        // .hover(function () {
-        //     this.$select.$el.setAttribute('opacity', '0.7')
-        // }, function () {
-        //     this.$select.$el.setAttribute('opacity', '0')
-        // })
         .on('click', function () {
             console.log(this.$select.$data)
         })
@@ -375,7 +370,7 @@ window.onload = function () {
         },function(){
             console.log(arguments)
         })
-        .lengedDblclick(function (ev, $select) {
+        .legendDblclick(function (ev, $select) {
             panel.style.left = (ev.pageX + 20) + 'px';
             panel.style.top = (ev.pageY - 50) + 'px';
             panel.style.display = 'block';
@@ -394,7 +389,7 @@ window.onload = function () {
         .on('click', function () {
             console.log(this.selectCollection)
         })
-        .lengedclick(function (ev, $select) {
+        .legendclick(function (ev, $select) {
             panel.style.left = (ev.pageX + 20) + 'px';
             panel.style.top = (ev.pageY - 50) + 'px';
             panel.style.display = 'block';
@@ -413,7 +408,7 @@ window.onload = function () {
         .on('click', function () {
             console.log(this.selectCollection)
         })
-        .lengedclick(function (ev, $select) {
+        .legendclick(function (ev, $select) {
             panel.style.left = (ev.pageX + 20) + 'px';
             panel.style.top = (ev.pageY - 50) + 'px';
             panel.style.display = 'block';
