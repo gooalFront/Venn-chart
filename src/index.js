@@ -196,12 +196,6 @@ import "babel-polyfill";
             // apply events
             this[applyEvents]();
             // this.hover();
-            let _this = this;
-            this.parent.querySelector('.venn_chart').addEventListener('click',function(ev){
-                _this.svgClick();
-                ev.stopPropagation();
-            },false);
-
             return this;
         }
 
@@ -314,7 +308,7 @@ import "babel-polyfill";
         }
 
         // lenged click event
-        legendclick(arg) {
+        legendClick(arg) {
             let lenges = this.parent.querySelectorAll('.lenged *');
             Array.from(lenges).forEach((val, index) => {
                 val.addEventListener('click', (ev) => {
@@ -428,10 +422,16 @@ import "babel-polyfill";
             }
         }
 
-        svgClick(){
-            this.selectCollection = [];
-            var links = this.parent.querySelectorAll(".pathLinkArea path");
-            links.forEach(v=>v.setAttribute('class',''));
+        svgClick(callback){
+            let _this = this;
+            this.parent.querySelector('.venn_chart').addEventListener('click',function(ev){
+                _this.selectCollection = [];
+                var links = _this.parent.querySelectorAll(".pathLinkArea path");
+                links.forEach(v=>v.setAttribute('class',''));
+                callback && callback();
+                ev.stopPropagation();
+            },false);
+            return this;
         }
 
         // init string template
