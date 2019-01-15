@@ -48,146 +48,7 @@ import "babel-polyfill";
             if (!this.data || !this.data.length) throw new Error('no data');
             if (!this.compareGroup || !this.compareGroup.length) throw new Error('no compare-group');
 
-            switch (this.compareGroup.length) {
-                case 2:
-                    this.WNT2.titleName1 = this.compareGroup[0];
-                    this.WNT2.titleName2 = this.compareGroup[1];
-                    this.WNT2.A = this[GetWntValue](this.groupKeyArray[0]);
-                    this.WNT2.AKey = this.groupKeyArray[0];
-                    this.WNT2.B = this[GetWntValue](this.groupKeyArray[1]);
-                    this.WNT2.BKey = this.groupKeyArray[1];
-                    this.WNT2.AB = this[GetWntValue](this.groupKeyArray[2]);
-                    this.WNT2.ABKey = this.groupKeyArray[2];
-                    this.curData = this.WNT2;
-                    break;
-                case 3:
-                    this.WNT3.titleName1 = this.compareGroup[0];
-                    this.WNT3.titleName2 = this.compareGroup[1];
-                    this.WNT3.titleName3 = this.compareGroup[2];
-                    this.WNT3.A = this[GetWntValue](this.groupKeyArray[0]);
-                    this.WNT3.AKey = this.groupKeyArray[0];
-                    this.WNT3.B = this[GetWntValue](this.groupKeyArray[1]);
-                    this.WNT3.BKey = this.groupKeyArray[1];
-                    this.WNT3.C = this[GetWntValue](this.groupKeyArray[2]);
-                    this.WNT3.CKey = this.groupKeyArray[2];
-                    this.WNT3.AB = this[GetWntValue](this.groupKeyArray[3]);
-                    this.WNT3.ABKey = this.groupKeyArray[3];
-                    this.WNT3.AC = this[GetWntValue](this.groupKeyArray[4]);
-                    this.WNT3.ACKey = this.groupKeyArray[4];
-                    this.WNT3.BC = this[GetWntValue](this.groupKeyArray[5]);
-                    this.WNT3.BCKey = this.groupKeyArray[5];
-                    this.WNT3.ABC = this[GetWntValue](this.groupKeyArray[6]);
-                    this.WNT3.ABCKey = this.groupKeyArray[6];
-                    this.curData = this.WNT3;
-                    break;
-                case 4:
-                    this.WNT4.titleName1 = this.compareGroup[0];
-                    this.WNT4.titleName2 = this.compareGroup[1];
-                    this.WNT4.titleName3 = this.compareGroup[2];
-                    this.WNT4.titleName4 = this.compareGroup[3];
-                    this.WNT4.A = this[GetWntValue](this.groupKeyArray[0]);
-                    this.WNT4.AKey = this.groupKeyArray[0];
-                    this.WNT4.B = this[GetWntValue](this.groupKeyArray[1]);
-                    this.WNT4.BKey = this.groupKeyArray[1];
-                    this.WNT4.C = this[GetWntValue](this.groupKeyArray[2]);
-                    this.WNT4.CKey = this.groupKeyArray[2];
-                    this.WNT4.D = this[GetWntValue](this.groupKeyArray[3]);
-                    this.WNT4.DKey = this.groupKeyArray[3];
-                    this.WNT4.AB = this[GetWntValue](this.groupKeyArray[4]);
-                    this.WNT4.ABKey = this.groupKeyArray[4];
-                    this.WNT4.AC = this[GetWntValue](this.groupKeyArray[5]);
-                    this.WNT4.ACKey = this.groupKeyArray[5];
-                    this.WNT4.AD = this[GetWntValue](this.groupKeyArray[6]);
-                    this.WNT4.ADKey = this.groupKeyArray[6];
-                    this.WNT4.BC = this[GetWntValue](this.groupKeyArray[7]);
-                    this.WNT4.BCKey = this.groupKeyArray[7];
-                    this.WNT4.BD = this[GetWntValue](this.groupKeyArray[8]);
-                    this.WNT4.BDKey = this.groupKeyArray[8];
-                    this.WNT4.CD = this[GetWntValue](this.groupKeyArray[9]);
-                    this.WNT4.CDKey = this.groupKeyArray[9];
-                    this.WNT4.ABC = this[GetWntValue](this.groupKeyArray[10]);
-                    this.WNT4.ABCKey = this.groupKeyArray[10];
-                    this.WNT4.ABD = this[GetWntValue](this.groupKeyArray[11]);
-                    this.WNT4.ABDKey = this.groupKeyArray[11];
-                    this.WNT4.ACD = this[GetWntValue](this.groupKeyArray[12]);
-                    this.WNT4.ACDKey = this.groupKeyArray[12];
-                    this.WNT4.BCD = this[GetWntValue](this.groupKeyArray[13]);
-                    this.WNT4.BCDKey = this.groupKeyArray[13];
-                    this.WNT4.ABCD = this[GetWntValue](this.groupKeyArray[14]);
-                    this.WNT4.ABCDKey = this.groupKeyArray[14];
-                    this.curData = this.WNT4;
-                    break;
-                case 5:
-                    this.WNT5.titleName1 = this.compareGroup[0];
-                    this.WNT5.titleName2 = this.compareGroup[1];
-                    this.WNT5.titleName3 = this.compareGroup[2];
-                    this.WNT5.titleName4 = this.compareGroup[3];
-                    this.WNT5.titleName5 = this.compareGroup[4];
-                    this.WNT5.A = this[GetWntValue](this.groupKeyArray[0]);
-                    this.WNT5.AKey = this.groupKeyArray[0];
-                    this.WNT5.B = this[GetWntValue](this.groupKeyArray[1]);
-                    this.WNT5.BKey = this.groupKeyArray[1];
-                    this.WNT5.C = this[GetWntValue](this.groupKeyArray[2]);
-                    this.WNT5.CKey = this.groupKeyArray[2];
-                    this.WNT5.D = this[GetWntValue](this.groupKeyArray[3]);
-                    this.WNT5.DKey = this.groupKeyArray[3];
-                    this.WNT5.E = this[GetWntValue](this.groupKeyArray[4]);
-                    this.WNT5.EKey = this.groupKeyArray[4];
-                    this.WNT5.AB = this[GetWntValue](this.groupKeyArray[5]);
-                    this.WNT5.ABKey = this.groupKeyArray[5];
-                    this.WNT5.AC = this[GetWntValue](this.groupKeyArray[6]);
-                    this.WNT5.ACKey = this.groupKeyArray[6];
-                    this.WNT5.AD = this[GetWntValue](this.groupKeyArray[7]);
-                    this.WNT5.ADKey = this.groupKeyArray[7];
-                    this.WNT5.AE = this[GetWntValue](this.groupKeyArray[8]);
-                    this.WNT5.AEKey = this.groupKeyArray[8];
-                    this.WNT5.BC = this[GetWntValue](this.groupKeyArray[9]);
-                    this.WNT5.BCKey = this.groupKeyArray[9];
-                    this.WNT5.BD = this[GetWntValue](this.groupKeyArray[10]);
-                    this.WNT5.BDKey = this.groupKeyArray[10];
-                    this.WNT5.BE = this[GetWntValue](this.groupKeyArray[11]);
-                    this.WNT5.BEKey = this.groupKeyArray[11];
-                    this.WNT5.CD = this[GetWntValue](this.groupKeyArray[12]);
-                    this.WNT5.CDKey = this.groupKeyArray[12];
-                    this.WNT5.CE = this[GetWntValue](this.groupKeyArray[13]);
-                    this.WNT5.CEKey = this.groupKeyArray[13];
-                    this.WNT5.DE = this[GetWntValue](this.groupKeyArray[14]);
-                    this.WNT5.DEKey = this.groupKeyArray[14];
-                    this.WNT5.ABC = this[GetWntValue](this.groupKeyArray[15]);
-                    this.WNT5.ABCKey = this.groupKeyArray[15];
-                    this.WNT5.ABD = this[GetWntValue](this.groupKeyArray[16]);
-                    this.WNT5.ABDKey = this.groupKeyArray[16];
-                    this.WNT5.ABE = this[GetWntValue](this.groupKeyArray[17]);
-                    this.WNT5.ABEKey = this.groupKeyArray[17];
-                    this.WNT5.ACD = this[GetWntValue](this.groupKeyArray[18]);
-                    this.WNT5.ACDKey = this.groupKeyArray[18];
-                    this.WNT5.ACE = this[GetWntValue](this.groupKeyArray[19]);
-                    this.WNT5.ACEKey = this.groupKeyArray[19];
-                    this.WNT5.ADE = this[GetWntValue](this.groupKeyArray[20]);
-                    this.WNT5.ADEKey = this.groupKeyArray[20];
-                    this.WNT5.BCD = this[GetWntValue](this.groupKeyArray[21]);
-                    this.WNT5.BCDKey = this.groupKeyArray[21];
-                    this.WNT5.BCE = this[GetWntValue](this.groupKeyArray[22]);
-                    this.WNT5.BCEKey = this.groupKeyArray[22];
-                    this.WNT5.BDE = this[GetWntValue](this.groupKeyArray[23]);
-                    this.WNT5.BDEKey = this.groupKeyArray[23];
-                    this.WNT5.CDE = this[GetWntValue](this.groupKeyArray[24]);
-                    this.WNT5.CDEKey = this.groupKeyArray[24];
-                    this.WNT5.ABCD = this[GetWntValue](this.groupKeyArray[25]);
-                    this.WNT5.ABCDKey = this.groupKeyArray[25];
-                    this.WNT5.ABCE = this[GetWntValue](this.groupKeyArray[26]);
-                    this.WNT5.ABCEKey = this.groupKeyArray[26];
-                    this.WNT5.ABDE = this[GetWntValue](this.groupKeyArray[27]);
-                    this.WNT5.ABDEKey = this.groupKeyArray[27];
-                    this.WNT5.ACDE = this[GetWntValue](this.groupKeyArray[28]);
-                    this.WNT5.ACDEKey = this.groupKeyArray[28];
-                    this.WNT5.BCDE = this[GetWntValue](this.groupKeyArray[29]);
-                    this.WNT5.BCDEKey = this.groupKeyArray[29];
-                    this.WNT5.ABCDE = this[GetWntValue](this.groupKeyArray[30]);
-                    this.WNT5.ABCDEKey = this.groupKeyArray[30];
-                    this.curData = this.WNT5;
-                    break;
-            }
+            this.keyRecognition();
             this[setLayout]();
             this.parent.innerHTML = this.layout[this.compareGroup.length];
 
@@ -197,6 +58,150 @@ import "babel-polyfill";
             this[applyEvents]();
             // this.hover();
             return this;
+        }
+
+        // 纠正组合key错误的情况
+        keyRecognition(){
+            switch (this.compareGroup.length) {
+                case 2:
+                    this.WNT2.titleName1 = this.compareGroup[0];
+                    this.WNT2.titleName2 = this.compareGroup[1];
+                    this.WNT2.A = this[GetWntValue](this.groupKeyArray[0],0);
+                    this.WNT2.AKey = this.groupKeyArray[0];
+                    this.WNT2.B = this[GetWntValue](this.groupKeyArray[1],1);
+                    this.WNT2.BKey = this.groupKeyArray[1];
+                    this.WNT2.AB = this[GetWntValue](this.groupKeyArray[2],2);
+                    this.WNT2.ABKey = this.groupKeyArray[2];
+                    this.curData = this.WNT2;
+                    break;
+                case 3:
+                    this.WNT3.titleName1 = this.compareGroup[0];
+                    this.WNT3.titleName2 = this.compareGroup[1];
+                    this.WNT3.titleName3 = this.compareGroup[2];
+                    this.WNT3.A = this[GetWntValue](this.groupKeyArray[0],0);
+                    this.WNT3.AKey = this.groupKeyArray[0];
+                    this.WNT3.B = this[GetWntValue](this.groupKeyArray[1],1);
+                    this.WNT3.BKey = this.groupKeyArray[1];
+                    this.WNT3.C = this[GetWntValue](this.groupKeyArray[2],2);
+                    this.WNT3.CKey = this.groupKeyArray[2];
+                    this.WNT3.AB = this[GetWntValue](this.groupKeyArray[3],3);
+                    this.WNT3.ABKey = this.groupKeyArray[3];
+                    this.WNT3.AC = this[GetWntValue](this.groupKeyArray[4],4);
+                    this.WNT3.ACKey = this.groupKeyArray[4];
+                    this.WNT3.BC = this[GetWntValue](this.groupKeyArray[5],5);
+                    this.WNT3.BCKey = this.groupKeyArray[5];
+                    this.WNT3.ABC = this[GetWntValue](this.groupKeyArray[6],6);
+                    this.WNT3.ABCKey = this.groupKeyArray[6];
+                    this.curData = this.WNT3;
+                    break;
+                case 4:
+                    this.WNT4.titleName1 = this.compareGroup[0];
+                    this.WNT4.titleName2 = this.compareGroup[1];
+                    this.WNT4.titleName3 = this.compareGroup[2];
+                    this.WNT4.titleName4 = this.compareGroup[3];
+                    this.WNT4.A = this[GetWntValue](this.groupKeyArray[0],0);
+                    this.WNT4.AKey = this.groupKeyArray[0];
+                    this.WNT4.B = this[GetWntValue](this.groupKeyArray[1],1);
+                    this.WNT4.BKey = this.groupKeyArray[1];
+                    this.WNT4.C = this[GetWntValue](this.groupKeyArray[2],2);
+                    this.WNT4.CKey = this.groupKeyArray[2];
+                    this.WNT4.D = this[GetWntValue](this.groupKeyArray[3],3);
+                    this.WNT4.DKey = this.groupKeyArray[3];
+                    this.WNT4.AB = this[GetWntValue](this.groupKeyArray[4],4);
+                    this.WNT4.ABKey = this.groupKeyArray[4];
+                    this.WNT4.AC = this[GetWntValue](this.groupKeyArray[5],5);
+                    this.WNT4.ACKey = this.groupKeyArray[5];
+                    this.WNT4.AD = this[GetWntValue](this.groupKeyArray[6],6);
+                    this.WNT4.ADKey = this.groupKeyArray[6];
+                    this.WNT4.BC = this[GetWntValue](this.groupKeyArray[7],7);
+                    this.WNT4.BCKey = this.groupKeyArray[7];
+                    this.WNT4.BD = this[GetWntValue](this.groupKeyArray[8],8);
+                    this.WNT4.BDKey = this.groupKeyArray[8];
+                    this.WNT4.CD = this[GetWntValue](this.groupKeyArray[9],9);
+                    this.WNT4.CDKey = this.groupKeyArray[9];
+                    this.WNT4.ABC = this[GetWntValue](this.groupKeyArray[10],10);
+                    this.WNT4.ABCKey = this.groupKeyArray[10];
+                    this.WNT4.ABD = this[GetWntValue](this.groupKeyArray[11],11);
+                    this.WNT4.ABDKey = this.groupKeyArray[11];
+                    this.WNT4.ACD = this[GetWntValue](this.groupKeyArray[12],12);
+                    this.WNT4.ACDKey = this.groupKeyArray[12];
+                    this.WNT4.BCD = this[GetWntValue](this.groupKeyArray[13],13);
+                    this.WNT4.BCDKey = this.groupKeyArray[13];
+                    this.WNT4.ABCD = this[GetWntValue](this.groupKeyArray[14],14);
+                    this.WNT4.ABCDKey = this.groupKeyArray[14];
+                    this.curData = this.WNT4;
+                    break;
+                case 5:
+                    this.WNT5.titleName1 = this.compareGroup[0];
+                    this.WNT5.titleName2 = this.compareGroup[1];
+                    this.WNT5.titleName3 = this.compareGroup[2];
+                    this.WNT5.titleName4 = this.compareGroup[3];
+                    this.WNT5.titleName5 = this.compareGroup[4];
+                    this.WNT5.A = this[GetWntValue](this.groupKeyArray[0],0);
+                    this.WNT5.AKey = this.groupKeyArray[0];
+                    this.WNT5.B = this[GetWntValue](this.groupKeyArray[1],1);
+                    this.WNT5.BKey = this.groupKeyArray[1];
+                    this.WNT5.C = this[GetWntValue](this.groupKeyArray[2],2);
+                    this.WNT5.CKey = this.groupKeyArray[2];
+                    this.WNT5.D = this[GetWntValue](this.groupKeyArray[3],3);
+                    this.WNT5.DKey = this.groupKeyArray[3];
+                    this.WNT5.E = this[GetWntValue](this.groupKeyArray[4],4);
+                    this.WNT5.EKey = this.groupKeyArray[4];
+                    this.WNT5.AB = this[GetWntValue](this.groupKeyArray[5],5);
+                    this.WNT5.ABKey = this.groupKeyArray[5];
+                    this.WNT5.AC = this[GetWntValue](this.groupKeyArray[6],6);
+                    this.WNT5.ACKey = this.groupKeyArray[6];
+                    this.WNT5.AD = this[GetWntValue](this.groupKeyArray[7],7);
+                    this.WNT5.ADKey = this.groupKeyArray[7];
+                    this.WNT5.AE = this[GetWntValue](this.groupKeyArray[8],8);
+                    this.WNT5.AEKey = this.groupKeyArray[8];
+                    this.WNT5.BC = this[GetWntValue](this.groupKeyArray[9],9);
+                    this.WNT5.BCKey = this.groupKeyArray[9];
+                    this.WNT5.BD = this[GetWntValue](this.groupKeyArray[10],10);
+                    this.WNT5.BDKey = this.groupKeyArray[10];
+                    this.WNT5.BE = this[GetWntValue](this.groupKeyArray[11],11);
+                    this.WNT5.BEKey = this.groupKeyArray[11];
+                    this.WNT5.CD = this[GetWntValue](this.groupKeyArray[12],12);
+                    this.WNT5.CDKey = this.groupKeyArray[12];
+                    this.WNT5.CE = this[GetWntValue](this.groupKeyArray[13],13);
+                    this.WNT5.CEKey = this.groupKeyArray[13];
+                    this.WNT5.DE = this[GetWntValue](this.groupKeyArray[14],14);
+                    this.WNT5.DEKey = this.groupKeyArray[14];
+                    this.WNT5.ABC = this[GetWntValue](this.groupKeyArray[15],15);
+                    this.WNT5.ABCKey = this.groupKeyArray[15];
+                    this.WNT5.ABD = this[GetWntValue](this.groupKeyArray[16],16);
+                    this.WNT5.ABDKey = this.groupKeyArray[16];
+                    this.WNT5.ABE = this[GetWntValue](this.groupKeyArray[17],17);
+                    this.WNT5.ABEKey = this.groupKeyArray[17];
+                    this.WNT5.ACD = this[GetWntValue](this.groupKeyArray[18],18);
+                    this.WNT5.ACDKey = this.groupKeyArray[18];
+                    this.WNT5.ACE = this[GetWntValue](this.groupKeyArray[19],19);
+                    this.WNT5.ACEKey = this.groupKeyArray[19];
+                    this.WNT5.ADE = this[GetWntValue](this.groupKeyArray[20],20);
+                    this.WNT5.ADEKey = this.groupKeyArray[20];
+                    this.WNT5.BCD = this[GetWntValue](this.groupKeyArray[21],21);
+                    this.WNT5.BCDKey = this.groupKeyArray[21];
+                    this.WNT5.BCE = this[GetWntValue](this.groupKeyArray[22],22);
+                    this.WNT5.BCEKey = this.groupKeyArray[22];
+                    this.WNT5.BDE = this[GetWntValue](this.groupKeyArray[23],23);
+                    this.WNT5.BDEKey = this.groupKeyArray[23];
+                    this.WNT5.CDE = this[GetWntValue](this.groupKeyArray[24],24);
+                    this.WNT5.CDEKey = this.groupKeyArray[24];
+                    this.WNT5.ABCD = this[GetWntValue](this.groupKeyArray[25],25);
+                    this.WNT5.ABCDKey = this.groupKeyArray[25];
+                    this.WNT5.ABCE = this[GetWntValue](this.groupKeyArray[26],26);
+                    this.WNT5.ABCEKey = this.groupKeyArray[26];
+                    this.WNT5.ABDE = this[GetWntValue](this.groupKeyArray[27],27);
+                    this.WNT5.ABDEKey = this.groupKeyArray[27];
+                    this.WNT5.ACDE = this[GetWntValue](this.groupKeyArray[28],28);
+                    this.WNT5.ACDEKey = this.groupKeyArray[28];
+                    this.WNT5.BCDE = this[GetWntValue](this.groupKeyArray[29],29);
+                    this.WNT5.BCDEKey = this.groupKeyArray[29];
+                    this.WNT5.ABCDE = this[GetWntValue](this.groupKeyArray[30],30);
+                    this.WNT5.ABCDEKey = this.groupKeyArray[30];
+                    this.curData = this.WNT5;
+                    break;
+            }
         }
 
         // custome colors
@@ -243,6 +248,29 @@ import "babel-polyfill";
                             $select.$data = item;
                         }
                     });
+
+                    // 如果顺序不一致
+                    if($select.$data === null){
+                        for (let i = 0; i < this.data.length; i++) {
+                            let compose =this.data[i].result.CompareGroup.split("∩");
+                            let keyCompose = compareGroup.split("∩");
+                            if(compose.length!=keyCompose.length){
+                                continue;
+                            }else{
+                                let count = 0;
+                               for(let m =0; m<keyCompose.length;m++){
+                                   if(!compose.includes(keyCompose[m])){
+                                       break;
+                                   }else{
+                                       count++;
+                                   }
+                               }
+        
+                               if(count===keyCompose.length) $select.$data = this.data[i];
+                            }
+                        }
+                    }
+
                     this.$select = $select;
                     fnEnter && fnEnter.call(this);
                 }, false);
@@ -512,14 +540,14 @@ import "babel-polyfill";
                         C336.756,281.96,315.521,288.191,292.83,288.191z" />
                     </g>
                     <g class="lenged">
-                        <rect transform="matrix(1.05 0 1.05 0)" width="14" height="14" data-color-index=0 fill="${this.colors[0]}" x="440" y="80"></rect>	
-                        <rect transform="matrix(1.05 0 1.05 0)" width="14" height="14" data-color-index=1 fill="${this.colors[1]}" x="440" y="60"></rect>	
-                        <rect transform="matrix(1.05 0 1.05 0)" width="14" height="14" data-color-index=2 fill="${this.colors[2]}" x="440" y="100"></rect>	
+                        <rect transform="matrix(1.05 0 0 1 -22 0)" width="14" height="14" data-color-index=0 fill="${this.colors[0]}" x="440" y="80"></rect>	
+                        <rect transform="matrix(1.05 0 0 1 -22 0)" width="14" height="14" data-color-index=1 fill="${this.colors[1]}" x="440" y="60"></rect>	
+                        <rect transform="matrix(1.05 0 0 1 -22 0)" width="14" height="14" data-color-index=2 fill="${this.colors[2]}" x="440" y="100"></rect>	
                     </g>
                     <g>
-                        <text transform="matrix(1.05 0 1.05 0)" x="458" y="72" fill="#333" font-weight="bold" font-size="12">${this.WNT3.titleName1}</text>
-                        <text transform="matrix(1.05 0 1.05 0)" x="458" y="92" fill="#333" font-weight="bold" font-size="12">${this.WNT3.titleName3}</text>
-                        <text transform="matrix(1.05 0 1.05 0)" x="458" y="112" fill="#333" font-weight="bold" font-size="12">${this.WNT3.titleName2}</text>
+                        <text transform="matrix(1.05 0 0 1 -22 0)" x="458" y="72" fill="#333" font-weight="bold" font-size="12">${this.WNT3.titleName1}</text>
+                        <text transform="matrix(1.05 0 0 1 -22 0)" x="458" y="112" fill="#333" font-weight="bold" font-size="12">${this.WNT3.titleName2}</text>
+                        <text transform="matrix(1.05 0 0 1 -22 0)" x="458" y="92" fill="#333" font-weight="bold" font-size="12">${this.WNT3.titleName3}</text>
                     </g>
                 </svg>`,
                 // four
@@ -907,11 +935,11 @@ import "babel-polyfill";
                         <rect transform="matrix(1.5 0 0 1.5 0 0)" x="500" y="100" width="14" height="14" data-color-index=4 fill="${this.colors[4]}"></rect>
                     </g>
                     <g>
+                    <text transform="matrix(1.5 0 0 1.5 0 0)" x="518" y="92" font-size="12" font-weight="bold">${this.WNT5.titleName1}</text>
+                    <text transform="matrix(1.5 0 0 1.5 0 0)" x="518" y="112" font-size="12" font-weight="bold">${this.WNT5.titleName2}</text>
                         <text transform="matrix(1.5 0 0 1.5 0 0)" x="518" y="32" font-size="12" font-weight="bold">${this.WNT5.titleName3}</text>
                         <text transform="matrix(1.5 0 0 1.5 0 0)" x="518" y="50" font-size="12" font-weight="bold">${this.WNT5.titleName4}</text>
                         <text transform="matrix(1.5 0 0 1.5 0 0)" x="518" y="71" font-size="12" font-weight="bold">${this.WNT5.titleName5}</text>
-                        <text transform="matrix(1.5 0 0 1.5 0 0)" x="518" y="92" font-size="12" font-weight="bold">${this.WNT5.titleName1}</text>
-                        <text transform="matrix(1.5 0 0 1.5 0 0)" x="518" y="112" font-size="12" font-weight="bold">${this.WNT5.titleName2}</text>
                     </g>
                 </svg>`
             ];
@@ -947,7 +975,7 @@ import "babel-polyfill";
         }
 
         // 根据key获取对应的值
-        [GetWntValue](key) {
+        [GetWntValue](key,index) {
             let result = "";
             for (let i = 0; i < this.data.length; i++) {
                 if (this.data[i].result.CompareGroup == key) {
@@ -955,9 +983,34 @@ import "babel-polyfill";
                     break;
                 }
             }
+
+            // 针对组合顺序错误的情况 需要比较每一个交集
             if (result == "") {
-                result = 0;
+                let tempItems = key.split('∩');
+                for (let i = 0; i < this.data.length; i++) {
+                    let compose =this.data[i].result.CompareGroup.split("∩");
+                    let keyCompose = key.split("∩");
+                    if(compose.length!=keyCompose.length){
+                        continue;
+                    }else{
+                        let count = 0;
+                       for(let m =0; m<keyCompose.length;m++){
+                           if(!compose.includes(keyCompose[m])){
+                               break;
+                           }else{
+                               count++;
+                           }
+                       }
+
+                       if(count===keyCompose.length) {
+                            result = this.data[i].result.Count;
+                            this.groupKeyArray[index] = this.data[i].result.CompareGroup;
+                       }
+                    }
+                }
             }
+
+            if(result == '') result = 0;
             return result;
         }
 

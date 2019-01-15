@@ -348,7 +348,7 @@ window.onload = function () {
             }
         }
     ]
-    var compareGroup5 = ["kegg", "nr", "nt", "go","swissport"];
+    var compareGroup5 = ["kegg", "nr", "nt", "go","swissprot"];
     var compareGroup4 = ["kegg", "nr", "nt", "go"];
     var compareGroup3 = ['head200w_11_vs_head200w_19', 'head200w_19_vs_head200w_23', 'head200w_11_vs_head200w_23'];
     var compareGroup2 = ['head200w_19_vs_head200w_23', 'head200w_11_vs_head200w_19']
@@ -389,7 +389,7 @@ window.onload = function () {
         .on('click', function () {
             console.log(this.selectCollection)
         })
-        .legendclick(function (ev, $select) {
+        .legendClick(function (ev, $select) {
             panel.style.left = (ev.pageX + 20) + 'px';
             panel.style.top = (ev.pageY - 50) + 'px';
             panel.style.display = 'block';
@@ -399,7 +399,7 @@ window.onload = function () {
 
         var oV4 = new Venn({ id: "venn_wrap4" })
         .config({
-            data: data2,
+            data: data4,
             compareGroup: compareGroup4,
             isMultipleSelect:true,
         })
@@ -408,7 +408,7 @@ window.onload = function () {
         .on('click', function () {
             console.log(this.selectCollection)
         })
-        .legendclick(function (ev, $select) {
+        .legendClick(function (ev, $select) {
             panel.style.left = (ev.pageX + 20) + 'px';
             panel.style.top = (ev.pageY - 50) + 'px';
             panel.style.display = 'block';
@@ -417,7 +417,7 @@ window.onload = function () {
 
         var oV5 = new Venn({ id: "venn_wrap5" })
         .config({
-            data: data2,
+            data: data5,
             compareGroup: compareGroup5,
             isMultipleSelect:true,
         })
@@ -426,7 +426,7 @@ window.onload = function () {
         .on('click', function () {
             console.log(this.selectCollection)
         })
-        .lengedclick(function (ev, $select) {
+        .legendClick(function (ev, $select) {
             panel.style.left = (ev.pageX + 20) + 'px';
             panel.style.top = (ev.pageY - 50) + 'px';
             panel.style.display = 'block';
